@@ -1,0 +1,282 @@
+/* --- MOBILE STYLES --- */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--spacing);
+}
+
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--spacing);
+}
+
+.aboutContainer {
+  background-color: var(--bg2-color);
+  padding: var(--spacing) 0;
+}
+
+
+
+.skillContainer {
+  background-color: var(--bg2-color);
+  padding: var(--spacing) 0;
+  margin-top: 20vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.personalImage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing);
+}
+
+.personalImage img {
+  height: 250px;
+  z-index: 50;
+  border-radius: 50%;
+  border: 1px solid var(--text-color);
+  opacity: 0.9;
+  padding: 10px;
+  filter: contrast(1.2);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+.skillBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillIcons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.skillInfo {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing);
+}
+
+.skillImage {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 11px;
+  
+}
+
+.skillImage img {
+  height: 40px;
+  z-index: 50;
+  opacity: 0.9;
+  filter: contrast(1.2);
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+
+
+.contentSkills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.contentContainer h4 {
+  color: var(--hl-color);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.contentContainer h5 {
+  color: var(--text-color);
+  font-size: 20px;
+  margin-bottom: 15px;
+  letter-spacing: -0.2px;
+}
+
+
+
+
+.contentSkills h5 {
+  color: var(--text-color);
+  font-size: 20px;
+  margin-bottom: 15px;
+  letter-spacing: -0.2px;
+}
+
+.contentDescription {
+  color: var(--secondary-text-color);
+  letter-spacing: 0.3px;
+  line-height: 1.7;
+}
+
+.infoContainer {
+  border-top: 1px solid var(--grey);
+  margin-top: var(--sm-spacing);
+  padding-top: var(--sm-spacing);
+}
+
+.info {
+  padding-left: 0;
+}
+
+.infoContainer span {
+  color: var(--text-color);
+}
+
+.infoContainer p {
+  color: var(--secondary-text-color);
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.contentContainer a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.contentContainer .btn {
+  margin-top: var(--sm-spacing);
+}
+
+.arrow-icon {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: -10px;
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+@media (min-width: 595px) {
+  .contentContainer {
+    padding: var(--sm-spacing);
+  }
+
+  .contentSkills {
+    padding: var(--sm-spacing);
+  }
+
+}
+
+
+
+
+@media (min-width: 750px) {
+  .aboutContainer {
+    padding: var(--spacing);
+  }
+
+  .skillContainer {
+    padding: var(--spacing);
+  }
+
+  
+
+  .skillInfo {
+    width: 100%;
+
+  }
+
+  .skillImage {
+    width: 90%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .skillImage img {
+    height: 45px;
+    z-index: 50;
+    opacity: 0.9;
+    filter: contrast(1.2);
+  }
+}
+
+
+
+
+
+@media (min-width: 992px) {
+  .personalImage img {
+    height: 430px;
+    z-index: 50;
+  }
+
+
+
+  .skillContainer {
+    width: 100%;
+  }
+
+
+
+  .skillInfo {
+    width: 50%;
+  }
+
+  .skillImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .skillImage img {
+    height: 50px;
+    z-index: 50;
+    opacity: 0.9;
+    filter: contrast(1.2);
+  }
+
+
+  .skillBox {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  
+
+  .contentSkills {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+
+}

@@ -2,14 +2,17 @@
 
 /* --- VARIABLES --- */
 :root {
-  --bg-color: #131a22;
-  --bg2-color: #232f3e19;
+  --bg-color: #101010;
+  --bg2-color: #121212;
   --hl-color: #48a3c6;
   --hl2-color: #ea5b5c;
+  --hl3-color: #dddddd;
+  --hl4-color: #fe8c00;
   --text-color: #f3f3f3;
-  --secondary-text-color: #999999;
+  --secondary-text-color: #9f9f9f;
   --grey: #9f9f9f76;
   --spacing: 50px;
+  --lg-spacing: 60px;
   --sm-spacing: 30px;
 }
 
@@ -91,6 +94,14 @@ body {
   color: var(--hl-color);
 }
 
+/* .skillIcons .icon {
+  color: red;
+} */
+
+
+
+
+
 .btn {
   color: #f9f9f9;
   background-color: var(--hl-color);
@@ -144,6 +155,7 @@ header {
 }
 
 .logo {
+  z-index: 999;
   height: 30px;
 }
 
@@ -181,6 +193,7 @@ header {
   background: none;
   border: none;
   font-size: 16px;
+  z-index: 999;
   cursor: pointer;
 }
 
@@ -217,6 +230,11 @@ header {
   color: var(--hl-color);
 }
 
+
+
+
+
+
 /* --- FOOTER --- */
 footer {
   font-size: 14px;
@@ -225,6 +243,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: var(--spacing);
+  margin-top: 8vh;
   text-align: center;
   color: var(--text-color);
 }
@@ -238,13 +257,20 @@ footer .footer-link {
   color: var(--hl-color);
   padding-top: 10px;
 }
-footer .footer-link:hover {
+/* footer .footer-link:hover {
   color: var(--hl2-color);
-}
+} */
 
 footer .socialIcons {
   padding-top: 10px;
 }
+
+
+
+
+
+
+
 
 /* --- MEDIA QUERIES --- */
 @media (min-width: 750px) {
@@ -283,7 +309,7 @@ footer .socialIcons {
     left: 0;
     width: 0;
     height: 1px;
-    background-color: var(--text-color);
+    background-color: var(--hl-color);
     transition: width 0.3s ease-in-out;
   }
 
@@ -298,7 +324,7 @@ footer .socialIcons {
     left: 0;
     width: 0;
     height: 1px;
-    background-color: var(--text-color);
+    background-color: var(--hl-color);
     transition: width 0.3s ease-in-out;
     width: 100%;
   }

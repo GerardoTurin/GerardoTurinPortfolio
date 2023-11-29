@@ -27,8 +27,13 @@ const ProjectDetails = () => {
   // Get the project title from the route parameters
   const { projectTitle } = useParams();
 
+  
   // Find the project in the data using the title
   const project = projects.find((project) => project.title.toLowerCase() === projectTitle);
+  
+  
+  // comprovar si e sun array
+  let isArr = Array.isArray(project.github);
 
   // If the project is not found, display the PageNotFound component
   if (!project) {
@@ -49,7 +54,7 @@ const ProjectDetails = () => {
             <div className="col-12 col-xl-8 projectBodyContainer">
               <div className="tech">
                 {/* Display project technologies with animation */}
-                {project.technologies.map((technology, i) => (
+                { project.technologies.map((technology, i) => (
                   <motion.span
                     key={i}
                     className="technology"
@@ -79,15 +84,28 @@ const ProjectDetails = () => {
 
               {/* Display buttons with animation */}
               <motion.div
-                style={{ display: "flex", gap: "10px" }}
+                style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: project.body.split("\n").length * 0.3 }}
-              >
-                <a href={project.github}>
-                  <Button name="View Code" />
-                </a>
-                <a href={project.deployed}>
+                transition={{ duration: 0.5, delay: project.body.split("\n").length * 0.3 }}>
+                { 
+                  !isArr ? 
+                    <>
+                      <a href={project.github} target="_blank" rel="noreferrer">
+                        <Button name="Code" />
+                      </a>
+                    </>
+                  :
+                    <>
+                      <a href={project.github[0]} target="_blank" rel="noreferrer">
+                        <Button name="FrontEnd Code" />
+                      </a>
+                      <a href={project.github[1]} target="_blank" rel="noreferrer">
+                        <Button name="BackEnd Code" />
+                      </a>
+                    </>
+                }
+                <a href={project.deployed} target="_blank" rel="noreferrer">
                   <Button name="View Site" />
                 </a>
                 <Link to="/portfolio">

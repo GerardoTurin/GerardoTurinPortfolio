@@ -17,7 +17,7 @@ const Contact = ({ name, email, location }) => {
   return (
     <>
       {/* Main Contact Page */}
-      <main className="contact container">
+      <main className="contact pb-0 container">
         {/* Display the page header */}
         <PageHeader title="Contact" description="Get in touch" />
 

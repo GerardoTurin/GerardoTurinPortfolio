@@ -4,23 +4,6 @@ import { useState } from "react";
 import validator from "email-validator";
 import Button from "./Button";
 
-/**
- * Contact Form Component
- * ----------------------
- * This component represents a fully functional contact form.
- *
- * @component
- *
- * Form Submission API Key:
- * ------------------------
- * To enable form submissions, obtain your API Key from https://web3forms.com/
- *
- * Follow these steps:
- * 1. Create a .env file in the root directory.
- * 2. Copy and paste the following line into your .env file, replacing with your API key:
- *    REACT_APP_ACCESS_KEY="Your API Key"
- *
- */
 
 const Form = () => {
   const [ref, inView] = useInView({
@@ -43,7 +26,7 @@ const Form = () => {
     email: "",
     subject: "",
     message: "",
-    access_key: process.env.REACT_APP_ACCESS_KEY,
+    access_key: "bf0cd443-a551-4cc2-bb02-3fc0d95d43d0",
   });
 
   // Handle input change
@@ -59,8 +42,10 @@ const Form = () => {
     errorStateSetter(false);
   };
 
+
+
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Validate and set error states
@@ -96,7 +81,7 @@ const Form = () => {
     const data = JSON.stringify(formData);
 
     // Send form data to an API endpoint
-    fetch("https://api.web3forms.com/submit", {
+     await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -129,6 +114,9 @@ const Form = () => {
       });
   };
 
+
+
+  
   // Determine button text based on status
   const handleButtonText = () => {
     if (sending) {
@@ -150,7 +138,7 @@ const Form = () => {
       initial={{ y: "10vw", opacity: 0 }}
       animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
-      onSubmit={handleSubmit}
+      onSubmit={ handleSubmit }
     >
       <h4 className="contentTitle">Send a Message</h4>
       {/* Input fields */}
@@ -161,7 +149,7 @@ const Form = () => {
           onFocus={() => {
             handleInputFocus(setNameError);
           }}
-          onChange={handleChange}
+          onChange={ handleChange }
           value={formData.name}
           id="contactName"
           name="name"
@@ -176,7 +164,7 @@ const Form = () => {
           onFocus={() => {
             handleInputFocus(setEmailError);
           }}
-          onChange={handleChange}
+          onChange={ handleChange }
           value={formData.email}
           id="contactEmail"
           name="email"
@@ -191,7 +179,7 @@ const Form = () => {
           onFocus={() => {
             handleInputFocus(setSubjectError);
           }}
-          onChange={handleChange}
+          onChange={ handleChange }
           value={formData.subject}
           id="contactSubject"
           name="subject"

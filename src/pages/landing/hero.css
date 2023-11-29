@@ -10,7 +10,10 @@
 }
 
 .landingImage {
-  right: 0px;
+  right: 0;
+  width: auto;
+  height: auto;
+  bottom: 36%;
 }
 
 .landing .socialIcons {
@@ -32,8 +35,10 @@
   }
 
   .landingImage {
-    bottom: 0;
-    right: 80px;
+    right: 20%;
+    width: auto;
+    height: auto;
+    bottom: 40%;
   }
 
   .landing .socialIcons {

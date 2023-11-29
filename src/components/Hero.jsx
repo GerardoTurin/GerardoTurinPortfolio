@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import landingImage from "../images/suit.png";
+import landingImage from "../images/black.png";
 import SocialIcons from "./SocialIcons";
 
 /**
@@ -15,10 +15,8 @@ const Hero = ({ name }) => {
   const styles = {
     landingImage: {
       position: "absolute",
-      bottom: "0",
       opacity: "0.3",
       mixBlendMode: "lighten",
-      height: "80%",
     },
 
     textContainer: {
@@ -65,7 +63,7 @@ const Hero = ({ name }) => {
               cursor: "",
             }}
             onInit={(typewriter) => {
-              typewriter.changeDelay(50).typeString("Software Engineer").start();
+              typewriter.changeDelay(50).typeString("Full Stack Developer").start();
             }}
           />
         </motion.div>
@@ -79,7 +77,7 @@ const Hero = ({ name }) => {
           transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
           style={styles.landingImage}
           src={landingImage}
-          alt="Michael Yeates"
+          alt="Gerardo Turin"
         />
       </div>
       {/* Displaying social icons */}

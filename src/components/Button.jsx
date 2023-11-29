@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpLeft } from "react-icons/fi";
 
 /**
  * Represents a button component with hover and tap animations.
@@ -23,8 +24,12 @@ const Button = ({ name, color }) => {
       {/* Display the button name */}
       <p>{name}</p>
       <div>
-        {/* Display the arrow icon */}
-        <FiArrowUpRight className="arrow-icon" />
+        {
+          name === "Go Back" ?
+            <FiArrowUpLeft className="arrow-icon" />
+          :
+          <FiArrowUpRight className="arrow-icon" />
+        }
       </div>
     </motion.button>
   );

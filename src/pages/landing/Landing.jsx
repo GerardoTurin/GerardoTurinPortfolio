@@ -1,5 +1,4 @@
 import Hero from "../../components/Hero";
-import Draw from "../../components/Draw";
 
 /**
  * Represents the Landing page component.
@@ -24,15 +23,8 @@ const Landing = ({ name }) => {
     <>
       {/* Main Landing Page */}
       <main className="landing container" style={styles.landing}>
-        {/* Display the drawing component */}
-        <Draw />
-
-        {/* Display the hero component */}
         <Hero name={name} />
       </main>
-
-      {/* Display the about section */}
-      {/* <About /> */}
     </>
   );
 };

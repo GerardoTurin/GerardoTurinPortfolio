@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import LightDarkToggle from "./LightDarkToggle";
 import openMenu from "../images/open.svg";
 import closeMenu from "../images/close.svg";
 
@@ -30,19 +29,27 @@ const NavLinks = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 2.4, duration: 0.5, type: "spring" }}
-        >
+          transition={{ delay: 2.4, duration: 0.5, type: "spring" }}>
           {/* Home link */}
           <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
             Home
+          </NavLink>
+        </motion.div>
+        
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 2.4, duration: 0.5, type: "spring" }}>
+          {/* About link */}
+          <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>
+            About <span style={{paddingRight: "5px"}}></span> me
           </NavLink>
         </motion.div>
 
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 2.3, duration: 0.5, type: "spring" }}
-        >
+          transition={{ delay: 2.3, duration: 0.5, type: "spring" }}>
           {/* Portfolio link */}
           <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
             Portfolio
@@ -52,20 +59,11 @@ const NavLinks = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 2.2, duration: 0.5, type: "spring" }}
-        >
+          transition={{ delay: 2.2, duration: 0.5, type: "spring" }}>
           {/* Contact link */}
           <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
             Contact
           </NavLink>
-        </motion.div>
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 2.1, duration: 0.5, type: "spring" }}
-        >
-          {/* Light/Dark mode toggle */}
-          <LightDarkToggle />
         </motion.div>
       </nav>
     </>
