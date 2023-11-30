@@ -37,5 +37,18 @@
     "deployed": "https://car-gt.vercel.app",
     "bgcolor": "#6c4bf4",
     "id": "3"
+  },
+  {
+    "title": "CalendarApp",
+    "description": "Calendar App",
+    "image": "/projectImages/calendarApp.png",
+    "image2": "/projectImages/calendar.jpg",
+    "image3": "/projectImages/quiz3.png",
+    "technologies": ["Vite","Bootstrap", "NodejS", "Express", "MongoDB", "Mongoose", "JWT"],
+    "body": "CalendarApp, is a calendar application that allows you to create events and save them in a database. This project was developed with MERN technology.",
+    "github": ["https://github.com/GerardoTurin/CalendarioApp-MERN---frontend", "https://github.com/GerardoTurin/CalendarioApp-MERN---backend"],
+    "deployed": "https://10-2-calendario-app-backend.fly.dev",
+    "bgcolor": "#f85781",
+    "id": "4"
   }
 ]
