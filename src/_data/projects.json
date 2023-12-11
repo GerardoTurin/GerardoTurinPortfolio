@@ -50,5 +50,18 @@
     "deployed": "https://10-2-calendario-app-backend.fly.dev",
     "bgcolor": "#f85781",
     "id": "4"
+  },
+  {
+    "title": "InventoryApp",
+    "description": "Inventory and stock management",
+    "image": "/projectImages/P1.png",
+    "image2": "/projectImages/inventoryIMG.jpg",
+    "image3": "/projectImages/p13.png",
+    "body": "InventoryApp, is a web application that allows to manage the stock of a store. In this app you can perform CRUD operations with all types of products. This project is made with the MERN stack.",
+    "technologies": ["React", "Material UI", "Express", "NodeJS", "MongoDB", "JWT"],
+    "github": ["https://github.com/GerardoTurin/InventoryApp-FrontMERN", "https://github.com/GerardoTurin/InventoryApp-BackMERN"],
+    "deployed": "https://inventory-app-mern.netlify.app",
+    "bgcolor": "#f73289",
+    "id": "5"
   }
 ]
