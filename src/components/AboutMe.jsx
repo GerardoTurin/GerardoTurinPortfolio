@@ -56,7 +56,7 @@ const AboutMe = ({ name }) => {
             <motion.div className="contentContainer" variants={staggerVariants}>
               {/* Display greeting and job title with animation */}
               <motion.h4 variants={paragraphVariants}>Nice to meet you! 👋🏻</motion.h4>
-              <motion.h5 variants={paragraphVariants}>I'm a Full Stack Developer Freelance.</motion.h5>
+              <motion.h5 variants={paragraphVariants}>I'm a Full Stack Developer.</motion.h5>
 
               {/* Display content description with animation */}
               <motion.div
@@ -66,13 +66,13 @@ const AboutMe = ({ name }) => {
                 animate={inView ? "animate" : "initial"}
               >
                 {/* Paragraphs with animation */}
-                <motion.p variants={paragraphVariants}>
-                  I've been working for 2 years in full stack <span style={{ color: "var(--hl-color)" }}> MERN</span> web applications. 
+                <motion.p variants={paragraphVariants}> 
+                  Web developer with 2 years of experience in creating and maintaining web applications. My goal is to create easy to use,<span style={{ color: "var(--hl-color)" }}> scalable and secure solutions</span>  that meet the needs and expectations of my clients. I have solid knowledge in the <span style={{ color: "var(--hl-color)" }}> MERN</span> Stack.
                 </motion.p>
-                <br />
+                {/* <br />
                 <motion.p variants={paragraphVariants}>
                 I focus on delivering effective solutions that generate value for clients. I develop <span style={{ color: "var(--hl-color)" }}> attractive and dynamic interfaces</span> using frameworks and libraries such as React, Next.js, Tailwind CSS and Material UI, ensuring an excellent user experience.
-                </motion.p>
+                </motion.p> */}
               </motion.div>
               
               {/* Button to download the CV */}
