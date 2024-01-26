@@ -76,7 +76,7 @@ const AboutMe = ({ name }) => {
               </motion.div>
               
               {/* Button to download the CV */}
-              <Link to="https://drive.google.com/file/d/1BmgjEU4DEjRuqOv2QQRqY_ZPzpSG-nUl/view?usp=drive_link" target="_blank"  rel="noreferrer">
+              <Link to="https://drive.google.com/file/d/1a6syNfxNWF9HwYfC5N-2t7dTBkfHkGZV/view?usp=drive_link" target="_blank"  rel="noreferrer">
                 <Button name="Download CV" />
               </Link>
 
