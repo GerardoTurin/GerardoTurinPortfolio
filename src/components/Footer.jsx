@@ -16,10 +16,10 @@ const Footer = () => {
     <footer>
       <SocialIcons />
 
-        <p className="footer-link">
-          &copy; {currentYear} Gerardo Turin.
-            <p>All rights reserved.</p>
-        </p>
+      <p className="footer-link">
+        &copy; {currentYear} Gerardo Turin.
+          <br/>All rights reserved.
+      </p>
 
       {/* Buy Me A Coffee link */}
     </footer>

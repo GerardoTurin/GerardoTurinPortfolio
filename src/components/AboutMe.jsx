@@ -67,7 +67,7 @@ const AboutMe = ({ name }) => {
               >
                 {/* Paragraphs with animation */}
                 <motion.p variants={paragraphVariants}> 
-                  Web developer with 2 years of experience in creating and maintaining web applications. My goal is to create easy to use,<span style={{ color: "var(--hl-color)" }}> scalable and secure solutions</span>  that meet the needs and expectations of my clients. I have solid knowledge in the <span style={{ color: "var(--hl-color)" }}> MERN</span> Stack.
+                  I have 2 years of experience in creating and maintaining web applications. My goal is to create easy to use,<span style={{ color: "var(--hl-color)" }}> scalable and secure solutions</span>  that meet the needs and expectations of my clients. I have solid knowledge in the <span style={{ color: "var(--hl-color)" }}> MERN</span> Stack.
                 </motion.p>
                 {/* <br />
                 <motion.p variants={paragraphVariants}>

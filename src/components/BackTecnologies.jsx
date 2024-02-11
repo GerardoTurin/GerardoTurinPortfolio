@@ -5,8 +5,7 @@ import mongoImg from "../images/mongodb.png";
 import expressImg from "../images/express.png";
 import jwtImg from "../images/jwt.png";
 import mongooseImg from "../images/mongoose.png";
-import npmImg from "../images/npm.png";
-import gitImg from "../images/git.png";
+import postgresqlImg from "../images/postgresql.png";
 
 
 const BackTecnologies = () => {
@@ -38,11 +37,8 @@ const BackTecnologies = () => {
                     <motion.div whileHover={{ scale: 1.10 }} title="Mongoose">
                         <motion.img src={ mongooseImg } alt="Mongoose" />
                     </motion.div>
-                    <motion.div whileHover={{ scale: 1.10 }} title="NPM">
-                        <motion.img src={ npmImg } alt="NPM" />
-                    </motion.div>
-                    <motion.div whileHover={{ scale: 1.10 }} title="Git">
-                        <motion.img src={ gitImg } alt="Git" />
+                    <motion.div whileHover={{ scale: 1.10 }} title="PostgreSQL">
+                        <motion.img src={ postgresqlImg } alt="PostgreSQL" />
                     </motion.div>
             </motion.div>
         </div>

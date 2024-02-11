@@ -3,6 +3,7 @@ import "../pages/about/about.css";
 import PageHeader from "./PageHeader";
 import FronTecnologies from "./FronTecnologies";
 import BackTecnologies from "./BackTecnologies";
+import OthersTecnologies from "./OthersTecnologies";
 
 
 const Skills = () => {
@@ -39,6 +40,12 @@ const Skills = () => {
             <motion.div className="contentSkills" variants={staggerVariants}>
               <motion.h5 variants={paragraphVariants}>Backend</motion.h5>
               <BackTecnologies />
+            </motion.div>
+          </div>
+          <div className="skillInfo col-12 col-lg-6">
+            <motion.div className="contentSkills" variants={staggerVariants}>
+              <motion.h5 variants={paragraphVariants}>Others</motion.h5>
+              <OthersTecnologies />
             </motion.div>
           </div>
         </div>
