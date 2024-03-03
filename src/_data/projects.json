@@ -63,5 +63,18 @@
     "deployed": "https://inventory-app-mern.netlify.app",
     "bgcolor": "#f73289",
     "id": "5"
+  },
+  {
+    "title": "TurinEstateGroup",
+    "description": "Real Estate",
+    "image": "/projectImages/realEstateView.png",
+    "image2": "/projectImages/realEstateIMG.jpg",
+    "image3": "/projectImages/p13.png",
+    "body": "TurinEstateGroup, is a web application that allows you to manage the stock of a store. In this app you can perform CRUD operations with all types of products. This project is made with the MERN stack.",
+    "technologies": ["React", "Tailwind", "Express", "NodeJS", "MongoDB", "JWT", "ReduxPersist"],
+    "github": "https://github.com/GerardoTurin/TurinEstateGroupMERN",
+    "deployed": "https://turinestategroupmern.onrender.com",
+    "bgcolor": "#ff3030",
+    "id": "6"
   }
 ]
