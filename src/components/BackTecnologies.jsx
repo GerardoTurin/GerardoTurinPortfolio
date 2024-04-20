@@ -6,6 +6,7 @@ import expressImg from "../images/express.png";
 import jwtImg from "../images/jwt.png";
 import mongooseImg from "../images/mongoose.png";
 import postgresqlImg from "../images/postgresql.png";
+import expressValid from "../images/express-validator.png";
 
 
 const BackTecnologies = () => {
@@ -39,6 +40,9 @@ const BackTecnologies = () => {
                     </motion.div>
                     <motion.div whileHover={{ scale: 1.10 }} title="PostgreSQL">
                         <motion.img src={ postgresqlImg } alt="PostgreSQL" />
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.10 }} title="Express Validator">
+                        <motion.img src={ expressValid } alt="Express Validator" />
                     </motion.div>
             </motion.div>
         </div>
