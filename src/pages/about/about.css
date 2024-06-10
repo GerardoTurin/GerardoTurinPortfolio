@@ -39,19 +39,27 @@
   margin-bottom: var(--spacing);
 }
 
-.personalImage img {
-  height: 250px;
-  z-index: 50;
-  border-radius: 50%;
-  border: 1px solid var(--text-color);
-  opacity: 0.9;
-  padding: 10px;
-  filter: contrast(1.2);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+
+
+
+@media (min-width: 360px) {
+  .personalImage img {
+    width: auto;
+    height: 200px;
+    z-index: 50;
+    border-radius: 50%;
+    border: 1px solid var(--text-color);
+    opacity: 0.9;
+    padding: 10px;
+    filter: contrast(1.2);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
 }
+
 
 
 .skillBox {
@@ -203,7 +211,11 @@
     padding: var(--spacing);
   }
 
-  
+  .personalImage img {
+    width: auto;
+    height: 300px;
+    z-index: 50;
+  }
 
   .skillInfo {
     width: 100%;
@@ -230,7 +242,8 @@
 
 @media (min-width: 992px) {
   .personalImage img {
-    height: 430px;
+    width: auto;
+    height: 350px;
     z-index: 50;
   }
 
