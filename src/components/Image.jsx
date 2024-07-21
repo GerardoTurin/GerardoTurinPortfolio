@@ -12,7 +12,7 @@ import { useState } from "react";
  * @param {string} opacity - The opacity of the image.
  */
 
-export default function Image({ src, height, width, size, alt, opacity }) {
+export default function Image({ src, height, width, size, alt, opacity, borderRadius }) {
   // State to manage image loading status
   const [loading, setLoading] = useState(true);
   return (
@@ -35,7 +35,7 @@ export default function Image({ src, height, width, size, alt, opacity }) {
           height: "100%",
           objectFit: "cover",
           opacity: opacity ? opacity : "1",
-          borderRadius: "5px",
+          borderRadius: borderRadius ? borderRadius : "5px",
         }}
         onLoad={(e) => {
           setLoading(false); // Set loading to false when the image is loaded

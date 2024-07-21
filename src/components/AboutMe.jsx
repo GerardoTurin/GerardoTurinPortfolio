@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 import aboutMeImg from "../images/Perfil.png";
 import "../pages/about/about.css";
+import Image from "./Image";
 
 /**
  * Represents the About Me section.
@@ -45,16 +46,16 @@ const AboutMe = ({ name }) => {
           <motion.div
             className="personalImage col-12 col-lg-6"
             ref={ref}
-            initial={{ x: "-10vw", opacity: 0, scale: 0.5 }}
-            animate={inView ? { x: 0, opacity: 1, scale: 1 } : { x: "-10vw", opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={inView ? { x: 0, opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
             whileHover={{ scale: 1.05 }}>
             {/* Display the personal image */}
-            <motion.img src={ aboutMeImg } alt={name} />
+            {/* <motion.img src={ aboutMeImg } alt={name} /> */}
+            <Image src={aboutMeImg} height="auto" width="60%" alt={name} borderRadius="50%" />
           </motion.div>
           <div className="personalInfo col-12 col-lg-6">
             <motion.div className="contentContainer" variants={staggerVariants}>
-              {/* Display greeting and job title with animation */}
               <motion.h4 variants={paragraphVariants}>Nice to meet you! 👋🏻</motion.h4>
               <motion.h5 variants={paragraphVariants}>I'm a Full Stack Developer.</motion.h5>
 
@@ -67,16 +68,13 @@ const AboutMe = ({ name }) => {
               >
                 {/* Paragraphs with animation */}
                 <motion.p variants={paragraphVariants}> 
-                  I have 2 years of experience in creating and maintaining web applications. My goal is to create easy to use,<span style={{ color: "var(--hl-color)" }}> scalable and secure solutions</span>  that meet the needs and expectations of my clients. I have solid knowledge in the <span style={{ color: "var(--hl-color)" }}> MERN</span> Stack.
+                  Experience in designing, developing, and maintaining web applications. Proficient in <span style={{ color: "var(--hl-color)" }}>JavaScript, React, Angular, NodeJS, and ExpressJS</span>. <br />
+                  Skilled in frontend and backend development, implementing <span style={{ color: "var(--hl-color)" }}>RESTful APIs, database management</span>, and application performance optimization.
                 </motion.p>
-                {/* <br />
-                <motion.p variants={paragraphVariants}>
-                I focus on delivering effective solutions that generate value for clients. I develop <span style={{ color: "var(--hl-color)" }}> attractive and dynamic interfaces</span> using frameworks and libraries such as React, Next.js, Tailwind CSS and Material UI, ensuring an excellent user experience.
-                </motion.p> */}
               </motion.div>
               
               {/* Button to download the CV */}
-              <Link to="https://drive.google.com/file/d/1oFX5wVLv-BUMxRMY1MGE8rwu_CjBxJzh/view?usp=drive_link" target="_blank"  rel="noreferrer">
+              <Link to="https://drive.google.com/file/d/1vD3kRsazmqSgW4IuWf5gVg8rXhLZMRsH/view?usp=drive_link" target="_blank"  rel="noreferrer">
                 <Button name="Download CV" />
               </Link>
 

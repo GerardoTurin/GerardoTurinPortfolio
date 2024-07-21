@@ -10,6 +10,7 @@ import reduxImg from "../images/redux.png";
 import muiImg from "../images/mui.png";
 import typescriptImg from "../images/typescript.png";
 import nextjsImg from "../images/nextjs.png";
+import angularImg from "../images/angular.png";
 
 const FronTecnologies = () => {
     const [ref, inView] = useInView({
@@ -54,6 +55,9 @@ const FronTecnologies = () => {
                     </motion.div>
                     <motion.div whileHover={{ scale: 1.10 }} title="Material UI">
                         <motion.img src={ muiImg } alt="Material UI" />
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.10 }} title="Angular">
+                        <motion.img src={ angularImg } alt="Angular" />
                     </motion.div>
             </motion.div>
         </div>

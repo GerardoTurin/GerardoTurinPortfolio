@@ -10,7 +10,7 @@ const About = () => {
                 {/* Display the page header */}
                 <PageHeader title="About me" description="Let me introduce myself" />
                 <div className="row">
-                    <AboutMe />
+                    <AboutMe name="Gerardo Turin" />
                 </div>
                 <div className="skill container row">
                     <Skills />
