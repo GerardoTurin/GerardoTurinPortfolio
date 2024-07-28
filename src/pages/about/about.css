@@ -8,6 +8,11 @@
 }
 
 
+.description {
+  text-align: justify;
+}
+
+
 .skill {
   display: flex;
   flex-direction: column;

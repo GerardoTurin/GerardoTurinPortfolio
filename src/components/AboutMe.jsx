@@ -16,7 +16,7 @@ import Image from "./Image";
  */
 
 const AboutMe = ({ name }) => {
-  // Using react-intersection-observer to determine if the component is in view
+  // useInView es para detectar cuando el elemento es visible en la pantalla
   const [ref, inView] = useInView({
     threshold: 0.4,
     triggerOnce: true,
@@ -67,7 +67,7 @@ const AboutMe = ({ name }) => {
                 animate={inView ? "animate" : "initial"}
               >
                 {/* Paragraphs with animation */}
-                <motion.p variants={paragraphVariants}> 
+                <motion.p variants={paragraphVariants} className="description"> 
                   Experience in designing, developing, and maintaining web applications. Proficient in <span style={{ color: "var(--hl-color)" }}>JavaScript, React, Angular, NodeJS, and ExpressJS</span>. <br />
                   Skilled in frontend and backend development, implementing <span style={{ color: "var(--hl-color)" }}>RESTful APIs, database management</span>, and application performance optimization.
                 </motion.p>
